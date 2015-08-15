@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VU7-qe-Qvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Comments-->
+        <scene sceneID="l0n-wd-VqP">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8e5-mW-LUw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="abr-zb-UC8" customClass="UICommentTableViewController" customModule="Comments" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Jua-dA-6gu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="abr-zb-UC8" id="WIh-AX-wfv"/>
+                            <outlet property="delegate" destination="abr-zb-UC8" id="0Xw-8T-acJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Comments" id="akt-Zd-dRJ"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="-117" y="410"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0LU-J0-Msk">
+            <objects>
+                <navigationController id="VU7-qe-Qvc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="rJW-1d-tHD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="abr-zb-UC8" kind="relationship" relationship="rootViewController" id="VwL-9m-O3w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QK4-Za-REV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-937" y="410"/>
+        </scene>
+    </scenes>
+</document>
